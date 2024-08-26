@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# ①課題番号-プロダクト名
 
-## Getting Started
+グルメ検索アプリ
 
-First, run the development server:
+## ②課題内容（どんな作品か）
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- 地域やジャンルを選択することでHotPepperに登録されている飲食店を検索できる
+- ログインすることでお気に入り登録ができる
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ③DEMO
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+https://web-api-app.vercel.app/
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## ④作ったアプリケーション用のIDまたはPasswordがある場合
 
-## Learn More
+- ユーザー名: テスト2
+- E-mail: test2@example.com
+- PW: test_2024_2
 
-To learn more about Next.js, take a look at the following resources:
+## ⑤工夫した点・こだわった点
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- 状態管理でReduxを使ってユーザー情報をグローバルに管理
+- お気に入り機能を導入して、FireStore Databaseにて保持
+- 動的ルーティングで実装
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## ⑥難しかった点・次回トライしたいこと(又は機能)
 
-## Deploy on Vercel
+- Reduxの概念理解（大規模アプリだとより有効らしい）
+- CSRとSSRでのコンポーネントやAPI実装
+- Reduxでのユーザー情報保持アルゴリズムの実装
+- UIに力を入れれなかったため、磨き込みたい
+- ReduxのStoreにもっと情報を保持させて有効性を確かめたかった
+- OpenAIのAPIも使ってレコメンド機能も付けたかった
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## ⑦質問・疑問・感想、シェアしたいこと等なんでも
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- [質問]
+- [感想]前回はContext、今回はReduxで共通情報を扱ったがReduxはToolkitで現在の情報を可視化できるから開発はしやすかった。だが、アプリ規模的にContextで良かった。
+- [参考記事]
+  - 1. https://qiita.com/FarStep131/items/ad834facc57a443a9dc3
+  - 2. https://ja.react.dev/reference/react/hooks
+  - 3. https://react-redux.js.org/introduction/getting-started
+  - 4. https://www.vareal.co.jp/column/react-redux/
+  - 5. https://qiita.com/asagohan2301/items/6ddd90845a710a5478f2
